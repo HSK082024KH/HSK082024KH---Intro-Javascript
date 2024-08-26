@@ -51,8 +51,8 @@ Example: "This is cool" should return "THIS IS COOL!"
 
 ******************************************************************************/
 
-export function makeMeLoud() {
-  //your code here
+export function makeMeLoud(string) {
+  return string.toUpperCase() + "!";
 }
 
 /******************************************************************************
