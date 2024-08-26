@@ -76,8 +76,31 @@ The function should return:
 
 ******************************************************************************/
 
-export const greeter = () => {
-  //your code here
+export const greeter = (str, n) => {
+  if (n < 0) {
+    return "Invalid time";
+  }
+  
+  if (n <= 5) {
+    return "Good night " + str;
+  }
+
+  if (n <= 11)  {
+    return "Good morning " + str;
+  }
+
+  if (n <= 17) {
+    return "Good day " + str;
+  }
+
+  if (n <= 23) {
+    return "Good evening " + str;
+  }
+
+  if (n > 23) {
+    return "Invalid time";
+  }
+
 };
 
 /******************************************************************************
