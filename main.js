@@ -145,7 +145,11 @@ Example3: "   hard        " should return "fun"
 ******************************************************************************/
 
 export const cleanAndFun = (string) => {
-  console.log("Hello");
+  console.log(string);
+  let newstr = string.replace("hard", "fun");
+  console.log(string);
+  let newnewstr =newstr.trim();
+  return string.trim().replace("hard", "fun");
 };
 
 /******************************************************************************
@@ -168,9 +172,13 @@ Use array methods to do the following:
  Return the resulting array.
 ******************************************************************************/
 
-export function marvelEditor() {
-  //your code here
-}
+export function marvelEditor(array) {
+  array.shift();
+  array.splice(1, 2);
+  console.log(array);
+  array.splice(3, 1, "Captain America");
+  console.log(array);
+} 
 
 /******************************************************************************
 7.
